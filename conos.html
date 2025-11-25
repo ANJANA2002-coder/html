@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2 style="color: darkblue;">Contact Us</h2>
+<form action="exam1.html" method="post" target="_blank">
+    <fieldset>
+        <legend>Enquiry Details</legend>
+        <label for="nm">Name</label><br>
+        <input type="text" name="name" id="nm" required> <br><br>
+        <label for="cc">Country Code</label><br>
+        <input type="text" name="code" id="cc" pattern="[A-Z a-z]{3}" title="Three letter country code"><br><br>
+        <label for="mn">Mobile Number</label><br>
+        <input type="tel" name="mobile" id="mn" maxlength="10" minlength="10" pattern="[0-9]{10}" required><br><br>
+        <label for="slt">Purpose of Communication</label>
+        <select name="select" id="slt" >
+            <option value="">Sales</option>
+            <option value="">Service</option>
+            <option value="">Enquiry</option>
+            <option value="">Advertisement</option>
+            <option value="">Complaint</option>
+        </select><br><br>
+        <label for="des">Tell Us More</label><br>
+        <textarea  id="des" rows="6" cols="100" placeholder="write your comments here.."></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    
+    </fieldset>
+    </form><br><br>
+    <a href="exam1.html">Home Page</a>
+</body>
+</html>
